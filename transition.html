@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .conteudo{
+            background-color: aqua;
+            width: 500px;
+            height: 200px;
+            padding: 50px;
+            box-sizing: border-box;
+            /*
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function:ease-in-out;
+            transition-delay: 2s;
+            */
+            transition: width 2s linear 1s, height 1s linear;
+            cursor: pointer;
+            
+        }
+        .conteudo:hover{
+            width:600px;
+            height:600px;
+            background-color:purple;
+
+        }
+       
+        
+        .pagina{
+            height: 400px;
+            background-color: red;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="pagina">
+        
+        <div class="conteudo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident impedit in non porro dignissimos unde
+             tenetur ullam voluptas! Nostrum eius doloremque omnis dolore repellat fuga numquam suscipit, alias hic.
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

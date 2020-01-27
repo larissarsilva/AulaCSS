@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .conteudo{
+            background-color: aqua;
+            width: 500px;
+            height: 200px;
+            padding: 50px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0px;
+            right: 200px;
+            z-index: 1; 
+        }
+        .conteudo1{
+            background-color: palegreen;
+            width: 500px;
+            height: 200px; 
+            position: absolute;
+            left: 0;   
+            z-index: 3;
+        }
+        .conteudo3{
+            background-color: rgb(221, 251, 152);
+            width: 500px;
+            height: 200px; 
+            position: absolute;
+            right:0;   
+            z-index: 2;
+        }
+        .pagina{
+            height: 2000px;
+            background-color: red;
+            position: relative;
+            
+        }
+        .navbar{
+            width: 100%;
+            height: 40px;
+            background-color: black;
+            position: fixed;
+            color: white;
+            z-index: 4;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagina">
+        <div class="navbar">
+            home
+        </div>
+        <div class="conteudo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident impedit in non porro dignissimos unde
+             tenetur ullam voluptas! Nostrum eius doloremque omnis dolore repellat fuga numquam suscipit, alias hic.
+        </div>
+        <div class="conteudo1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident impedit in non porro dignissimos unde
+             tenetur ullam voluptas! Nostrum eius doloremque omnis dolore repellat fuga numquam suscipit, alias hic.
+        </div>
+        <div class="conteudo3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident impedit in non porro dignissimos unde
+             tenetur ullam voluptas! Nostrum eius doloremque omnis dolore repellat fuga numquam suscipit, alias hic.
+        </div>
+    </div>
+
+    
+</body>
+</html>
