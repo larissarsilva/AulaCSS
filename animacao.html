@@ -7,25 +7,35 @@
     <title>Document</title>
     <style>
         @keyframes animacao-box {
+            from
+            {
+            background-color:blue; 
+            border-radius: 300px; top:100px; left:100px;
+            }
+            to{ 
+                background-color: red;
+                border-radius: 0px; top:0px; left:0px;
+                }
+
+           
+        }
+
+        @keyframes animacao-box2 {
             0% {
-                background:red;
+                background-color: blue;
+                top: 0px;
                 border-radius: 0px;
-                top: 0;
-                left: 0;
             }
             50% {
-                background:blue;
-                border-radius: 300px;
-                top:100px;
-                left:100px;
-                }
+                background-color: purple;
+                top: 100px;
+                border-radius: 100px;
+            }
             100%{
-                background:green;
+                background-color:green;
                 top:200px;
-                left:200px;
-                border-radius: 300px;
-
-            }    
+                border-radius:300px;
+            }
         }
 
         #box-animacao{
@@ -36,13 +46,27 @@
             animation-duration: 5s;
             animation-delay: 2s;
             animation-iteration-count: infinite;
+            animation-direction: reverse;
+            position: relative;
+        }
+
+        #box-animacao2{
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+            animation-name: animacao-box;
+            animation-duration: 5s;
+            
+            animation-iteration-count: infinite;
             animation-direction: alternate;
             position: relative;
         }
+        
     </style>
 </head>
 <body>
-    <div id="box-animacao">
+    
+    <div id="box-animacao2">
 
     </div>
 </body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .boxcard{
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            
+        }
+        .boxcard:hover .saiba {
+            display: none;
+           
+        }
+        .boxcard:hover .descricao{
+            display: inline;
+            color: red;
+        }
+        .descricao{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxcard">
+        <div class="titulo">
+            funcional
+        </div>
+        <div class="saiba">
+            SAIBA + 
+        </div>
+        <div class="descricao">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Asperiores minus sequi libero reiciendis, corrupti quibusdam ut eos consequatur vel hic expedita, 
+            delectus dolorem iste totam accusantium magnam quisquam odit aperiam.
+        </div>
+    </div>
+</body>
+</html>
